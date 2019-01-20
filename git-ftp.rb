@@ -6,6 +6,8 @@ class GitFtp < Formula
   sha1 '37116c868b5fdd58136896b43542afdf3af71530'
 
   head 'https://github.com/git-ftp/git-ftp.git'
+  
+  depends_on 'brotli'
 
   def install
     system "make", "prefix=#{prefix}", "install"
